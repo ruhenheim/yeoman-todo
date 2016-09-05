@@ -2,7 +2,7 @@ import {compose, createStore} from 'redux';
 import rootReducer from '../reducers/index';
 
 import persistState, {mergePersistedState} from 'redux-localstorage';
-import adapter from 'redux-localstorage/lib/adapters/localStorage'
+import adapter from 'redux-localstorage/lib/adapters/localStorage';
 
 export default function configureStore(initialState) {
   const reducer = compose(
